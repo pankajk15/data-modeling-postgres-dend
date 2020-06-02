@@ -1,5 +1,5 @@
-# SPARKIFY DB Overview
- 
+# SPARKIFY DB Overview: 		<img src="images/postgresql_logo.png" width="100" height="80" ALIGN="right">
+
 ## Introduction: 
 	The purpose of the sparkify database is to enable the analytics team in Sparkify company to analyse the songs 
 	that its users are listening to using its streaming application. Database contains a number of fact and dimension
@@ -15,17 +15,19 @@
 
 ## Tables & Schemas
 
-    - Fact Table: songplays
-		* Table has data from the log_data file with the artist_id and song_id columns from the songs and artists tables
-    - Dimension Table: users
-		* Has data from the log_data JSON files
+    	- Fact Table: songplays
+		..* Table has data from the log_data file with the artist_id and song_id
+			columns from the songs and artists tables
+    	- Dimension Table: users
+		..* Has data from the log_data JSON files
 	- Dimension Table: songs 
-		* Has data from the song_data JSON files
+		..* Has data from the song_data JSON files
 	- Dimension Table: Artists
-		* Has data from the song_data JSON files
+		..* Has data from the song_data JSON files
 	- Dimension Table: time
-		* Has data from the log_data JSON files
-        * The table stores the timestamp of each song play and further detailed down into individual units of time in columns
+		..* Has data from the log_data JSON files
+        * The table stores the timestamp of each song play and further detailed down into 
+		individual units of time in columns
   
 ## Operation Instructions
 
@@ -50,11 +52,11 @@
 		* Step 3: Commit the queries this actually run the query in database
 		* Step 4: Close the database connection once you have finished executing queries
 
-		Example:
+		`Example:
 			cur = conn.cursor()
 			cur.execute("""SELECT * FROM sparkifydb.songs;""")
 			conn.commit()
-			conn.close()
+			conn.close()`
 		
 		** Example: View Male paid users
 			
