@@ -1,9 +1,11 @@
 # SPARKIFY DB Overview
  
 ## Introduction: 
-	The purpose of the sparkify database is to enable the analytics team in Sparkify company to analyse the songs that its users are listening to using its streaming application. 
-    Database contains a number of fact and dimension tables which has data on the songs users are listening to, information about those users (e.g. are they paid or free users?), and about the songs and artists that they have listened to in the app.
-    Sample Queries section will give you more insights and help you understand the expected and intended use of the database.
+	The purpose of the sparkify database is to enable the analytics team in Sparkify company to analyse the songs 
+	that its users are listening to using its streaming application. Database contains a number of fact and dimension
+	tables which has data on the songs users are listening to, information about those users (e.g. are they paid or 
+	free users?), and about the songs and artists that they have listened to in the app. Sample Queries section will
+	give you more insights and help you understand the expected and intended use of the database.
  
 ## Database: sparkifydb
  
