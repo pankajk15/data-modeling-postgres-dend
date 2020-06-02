@@ -54,13 +54,11 @@ Command:
  - Step 4: Close the database connection once you have finished executing queries
 
 - Example:
-	```cur = conn.cursor()
+	```SQL
+	cur = conn.cursor()
 	cur.execute("""SELECT * FROM sparkifydb.songs;""")
 	conn.commit()
-	conn.close()```
-	
-
-
+	conn.close()	
  - Example: View Male paid users
 	```SQL
 	%sql SELECT * FROM songplays INNER JOIN users ON songplays.user_id = users.user_id WHERE 
